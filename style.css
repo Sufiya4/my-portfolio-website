@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+
+}
+
+:root{
+    --color-red:red;
+    --color-bg:rgb(233, 229, 217);
+    --color-icons:white;
+    --color-grey:grey;
+}
+
+body{
+    background-color: var(--color-bg);
+    color: var(--color-icons);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title-top{
+	background-color:black;
+	color:white;
+	padding: 30px 0;
+}
+
+.intro{
+    color:black;
+    font-style:normal;
+    padding-right:5%;
+    padding-left:3%;
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+
+.typing-demo {
+    width: 36ch;
+    animation: typing 2.5s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color:black;
+  }
+  
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.homepage-images{
+    padding-right:10%;
+    padding-left:10%;
+}
+
+#about-me{
+    background-color: black;
+    color:white;
+}
+/*a{
+    display:inline-block;
+    color:inherit;
+    font-family: inherit;
+}
+
+header{
+    color:var(--color-icons);
+    height:100vh;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    padding: 3rem 18rem;
+}*/
+
+
+.controls{
+    position:fixed;
+    top:2%;
+    right:1%;
+    justify-content: center;
+    align-items: center;
+    .control{
+        padding:1rem;
+        background-color: var(--color-grey);
+        width:45px;
+        height:45px;
+        border-radius: 60%;
+        justify-content: center;
+        align-items: center;
+        margin:0.7rem;
+    }
+}
